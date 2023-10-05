@@ -9,7 +9,7 @@
         <div class="py-10 text-center">
             <div class="inline-block sm:pt-1">
                 <h2 class="font-bold">
-                    Created by: Code With Dary
+                    Created by: alex
                 </h2>
 
                 <p class="text-sm text-gray-600">
@@ -21,7 +21,7 @@
         <img
                 src="{{ movie.imagePath }}"
                 class="rounded-xl w-full shadow-xl"
-                alt="Icon of Code With Dary"
+                alt="Icon of alex"
         />
 
         <p class="text-xl py-6">
@@ -31,18 +31,5 @@
         <a href="/movies/edit/{{ movie.id }}" class="bg-green-500 font-bold py-2 px-4 rounded transition-all hover:bg-green-300">Edit movie</a>
         <a href="/movies/delete/{{ movie.id }}" class="bg-red-500 font-bold py-2 px-4 rounded transition-all hover:bg-green-300">Delete movie</a>
 
-{#        {% if app.user and movie.userId == app.user.id %}#}
-{#            <a#}
-{#                    href="/movies/edit/{{ movie.id }}"#}
-{#                    class="bg-green-500 font-bold py-2 px-4 rounded transition-all hover:bg-green-300">#}
-{#                Edit Movie#}
-{#            </a>#}
-
-{#            <a#}
-{#                    href="/movies/delete/{{ movie.id }}"#}
-{#                    class="bg-red-500 font-bold py-2 px-4 ml-6 rounded transition-all hover:bg-red-300">#}
-{#                Delete Movie#}
-{#            </a>#}
-{#        {% endif %}#}
     </div>
 {% endblock %}

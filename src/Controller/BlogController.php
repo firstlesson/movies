@@ -11,12 +11,12 @@ class BlogController extends AbstractController
     #[Route('/blog/{page}', name: 'blog_list', requirements: ['page' => '\d+'])]
     public function list(int $page): Response
     {
-        return $this->render('123');
+        return $this->render('a');
     }
 
     #[Route('/blog/{slug}', name: 'blog_show')]
     public function show($slug): Response
     {
-        return $this->render('1234');
+        return $this->render('a');
     }
 }

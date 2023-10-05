@@ -128,7 +128,6 @@ class MoviesController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             if ($imagePath) {
                 if ($movie->getImagePath() !== null) {
-//                    if (file_exists($this->getParameter('kernel.project_dir') . $movie->getImagePath())) {
                         $this->filesystem->remove($this->getParameter('kernel.project_dir') . '/public' . $movie->getImagePath());
                         $this->getParameter('kernel.project_dir') . $movie->getImagePath();
                         $newFileName = uniqid() . '.' . $imagePath->guessExtension();
